@@ -9,6 +9,27 @@ body {
     font-family:"Open Sans",sans-serif;
   }
 
+  .content {
+    padding:20px;
+    font-size:18px;
+    margin-top: 10vh;
+  }
+  
+
+  .nav {
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      width: 100vw;
+      position: fixed;
+      top: 0%;
+  }
+
+  .logo {
+      margin-left: 20px;
+  }
+
   .navigation {
     position:fixed;
     top:0px;
@@ -87,7 +108,7 @@ body {
     position:absolute;
     left:0px;
     bottom:-5px;
-    height:10px;
+    height:12px;
     width:0%;
     background:#648967;
     transition:all 300ms ease-in-out;
