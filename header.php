@@ -9,7 +9,7 @@
 <body>
 <div class="nav">
     <a class="navbar-brand" href="#">
-        <img class="logo" src="<?php echo get_template_directory_uri() ?>/images/logo.svg" alt="logo" width="100" height="100"></a>
+        <img class="logo" src="<?php echo get_template_directory_uri() ?>/images/logo.svg" alt="logo"></a>
     <div class="navigation">
         <div class="ham-btn" onclick="showNav()">
             <span></span>

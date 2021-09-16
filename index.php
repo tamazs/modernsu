@@ -3,6 +3,7 @@
 ?>
 <div class="landing">
     <img src="<?php echo get_template_directory_uri() ?>/images/landingc.png" alt="image" class="landingimg">
+    <img src="<?php echo get_template_directory_uri() ?>/images/mobile.png" alt="image" class="landingimgm">
     <div class="toptext"><?php bloginfo('name')?></div>
     <div class="bottomtext"><?php bloginfo('description')?></div>
 </div>
@@ -10,6 +11,7 @@
     <div class="container">
         <section class="p1">
             <h1>Poland</h1>
+            <p class="ptext1"><?php the_field('text1') ?></p>
         </section>
         <section class="p2">
             <h1>Poland</h1>
