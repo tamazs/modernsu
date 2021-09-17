@@ -95,16 +95,8 @@ section {
 }
 
 
-.p1, .t1, .a1, .j1, .g1 {
-  background-color: green;
-}
-
-.p2, .t2, .a2, .j2, .g2 {
-  background-color: red;
-}
-
-.p3, .t3, .a3, .j3, .g3 {
-  background-color: blue;
+.t1, .t2, .t3, .t4 {
+  background-color: #edefdb;
 }
 
 .nav {
@@ -298,24 +290,32 @@ section {
     section {
         flex: none;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         height: 100vh;
         width: 100vw;
         scroll-snap-align: start;
+        padding: 16px;
+    }
+
+    .title {
+      text-transform: uppercase;
+      font-size: 60px;
+      color: #529c57;
+    }
+
+    .text1{
+      font-size: 16px;
+    }
+
+    .shape {
+      max-height: 80vh;
+      max-width: 60vw;
     }
 
 
-    .p1, .t1, .a1, .j1, .g1 {
-      background-color: green;
-    }
-    
-    .p2, .t2, .a2, .j2, .g2 {
-      background-color: red;
-    }
-
-    .p3, .t3, .a3, .j3, .g3 {
-      background-color: blue;
+    .t1, .t2, .t3, .t4 {
+      background-color: #edefdb;
     }
 
     .nav {

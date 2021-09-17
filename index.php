@@ -8,63 +8,32 @@
     <div class="bottomtext"><?php bloginfo('description')?></div>
 </div>
 <div class="content">
-    <div class="container">
-        <section class="p1">
-            <h1>Poland</h1>
-            <p class="ptext1"><?php the_field('text1') ?></p>
-        </section>
-        <section class="p2">
-            <h1>Poland</h1>
-        </section>
-        <section class="p3">
-            <h1>Poland</h1>
-        </section>
-    </div>
+<?php while(have_posts()): the_post() ?>
     <div class="container">
         <section class="t1">
-            <h1>Texas</h1>
+            <div class="left">
+                <h1 class="title"><?php the_title() ?></h1>
+                <p class="text1"><?php the_field('text1') ?></p>
+            </div>
+            <div class="right">
+                <img src="<?php the_field('shape') ?>" alt="shape" class="shape">
+            </div>
         </section>
         <section class="t2">
-            <h1>Texas</h1>
+            <p class="text2"><?php the_field('text2') ?></p>
         </section>
-        <section class="t3">
-            <h1>Texas</h1>
-        </section>
+        <?php if(get_field("text3")): ?>
+            <section class="t3">
+            <p class="text3"><?php the_field('text3') ?></p>
+            </section>
+        <?php endif; ?>
+        <?php if(get_field("text4")): ?>
+            <section class="t4">
+            <p class="text4"><?php the_field('text4') ?></p>
+            </section>
+        <?php endif; ?>
     </div>
-    <div class="container">
-        <section class="a1">
-            <h1>Afghanistan</h1>
-        </section>
-        <section class="a2">
-            <h1>Afghanistan</h1>
-        </section>
-        <section class="a3">
-            <h1>Afghanistan</h1>
-        </section>
-    </div>
-    <div class="container">
-        <section class="j1">
-            <h1>Japan</h1>
-        </section>
-        <section class="j2">
-            <h1>Japan</h1>
-        </section>
-        <section class="j3">
-            <h1>Japan</h1>
-        </section>
-    </div>
-    <div class="container">
-        <section class="g1">
-            <h1>Global</h1>
-        </section>
-        <section class="g2">
-            <h1>Global</h1>
-        </section>
-        <section class="g3">
-            <h1>Global</h1>
-        </section>
-    </div>
-</div>
+<?php endwhile; ?>
 <?php
     get_footer();
 ?>
