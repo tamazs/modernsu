@@ -16,4 +16,10 @@ function wpb_hook_javascript() {
     <?php
 }
 add_action('wp_head', 'wpb_hook_javascript');
+
+function modernsu_register_menu(){
+    register_nav_menu("main-menu", "Main menu");
+}
+
+add_action("init", "modernsu_register_menu");
 ?>

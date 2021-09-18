@@ -20,16 +20,21 @@
             </div>
         </section>
         <section class="t2">
-            <p class="text2"><?php the_field('text2') ?></p>
+            <div class="left">
+                <p class="text2"><?php the_field('text2') ?></p>
+            </div>
+            <div class="right">
+                <img src="<?php the_field('pics') ?>" alt="pics" class="pics">
+            </div>
         </section>
         <?php if(get_field("text3")): ?>
             <section class="t3">
-            <p class="text3"><?php the_field('text3') ?></p>
-            </section>
-        <?php endif; ?>
-        <?php if(get_field("text4")): ?>
-            <section class="t4">
-            <p class="text4"><?php the_field('text4') ?></p>
+                <div class="left">
+                    <p class="text3"><?php the_field('text3') ?></p>
+                </div>
+                <div class="right">
+                    <img src="<?php the_field('pics2') ?>" alt="pics" class="pics">
+                </div>
             </section>
         <?php endif; ?>
     </div>

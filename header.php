@@ -18,22 +18,7 @@
         </div>
         <div class="links">
             <div class="link">
-            <a href="#">Home</a>
-            </div>
-            <div class="link">
-            <a href="#">Poland</a>
-            </div>
-            <div class="link">
-            <a href="#">Texas</a>
-            </div>
-            <div class="link">
-            <a href="#">Afghanistan</a>
-            </div>
-            <div class="link">
-            <a href="#">Japan</a>
-            </div>
-            <div class="link">
-            <a href="#">Global</a>
+            <?php wp_nav_menu(array("theme-location" => "main-menu")) ?>
             </div>
         </div>
     </div>
