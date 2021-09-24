@@ -18,7 +18,9 @@
         </div>
         <div class="links">
             <div class="link">
-            <?php wp_nav_menu(array("theme-location" => "main-menu")) ?>
+                <ul>
+                    <?php wp_nav_menu(array("theme-location" => "main-menu")) ?>
+                </ul>
             </div>
         </div>
     </div>
